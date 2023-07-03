@@ -35,10 +35,10 @@ jobs:
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
     - name: Build the Docker image
-      run: docker build -t lee/cicdtest .
+      run: docker build -t dltjddns93/cicdtest .
       
     - name: Push the Docker image
-      run: docker push lee/cicdtest
+      run: docker push dltjddns93/cicdtest
       
     - name: execute shell script
       uses: appleboy/ssh-action@master
